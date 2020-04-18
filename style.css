@@ -1,0 +1,140 @@
+@font-face{
+    font-family: "poppins200";
+    src: url('fonts/Poppins-ExtraLight.ttf');
+}
+@font-face{
+    font-family: "poppins300";
+    src: url('fonts/Poppins-Light.ttf');
+}
+@font-face{
+    font-family: "poppins600";
+    src: url('fonts/Poppins-SemiBold.ttf');
+}
+
+html{
+    /*Widhts*/
+    --mobile-width: 375px;
+    --desktop-width: 1440px;
+    padding: 0;
+    margin: 0;
+    height: 0;
+    width: 0;
+
+    /*Colors*/
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-Dark-Blue: hsl(234, 12%, 34%);
+    --grayish-Blue: hsl(229, 6%, 66%);
+    --verylight-Gray: hsl(0, 0%, 98%);
+
+    /*Fonts*/
+    font-size: 15px;
+    color: var(--grayish-Blue);
+}
+
+body{
+    background-color: var(--verylight-Gray);
+    width: var(--desktop-width);
+    margin: 0;
+    height: 922px;
+}
+
+/*Title*/
+.header{
+    margin: 80px 0 60px 0;
+    width: var(--desktop-width);
+}
+
+.header p{
+    font-family: "poppins200";
+    width: 500px;
+    margin-top: 34px;
+    margin-bottom: 20px;
+    margin-left: 470px;
+    text-align: center;
+}
+
+h1{
+    color: var(--very-Dark-Blue);
+    margin-left: 538px;
+    text-align: center;
+    line-height: 17px;
+    width: fit-content;
+    font-family: "poppins200";
+}
+
+.dark{
+    padding-top: 5px;
+    font-family: "poppins600";
+}
+
+/*Cards*/
+img{
+    float: right;
+    margin-top: 20px;
+    margin-right: 38px;
+}
+
+.content{
+    width: var(--desktop-width);
+    height: 766px;
+}
+
+.content div{
+    background-color: white;
+    height: 250px;
+    padding-left: 40px;
+    padding-top: 10px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 1px var(--grayish-Blue);
+}
+
+.content div p {
+    width: 300px;
+    font-size: 15px;
+    font-family: "poppins200";
+}
+
+.teamBuilder{
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-left: 525px;
+    border-top: 5px solid var(--red);
+}
+
+.supervisor{
+    float: left;
+    margin-bottom: 575px;
+    margin-left: 110px;
+    border-top: 5px solid var(--cyan);
+}
+
+.karma{
+    margin-left: 525px;
+    margin-right: 25px;
+    border-top: 5px solid var(--orange);
+}
+
+.calculator{
+    float: right;
+    margin-right: 110px;
+    border-top: 5px solid var(--blue);
+}
+
+h2{
+    width: fit-content;
+    line-height: 17px;
+    color: var(--very-Dark-Blue);
+    font-family: "poppins300";
+}
+
+/* Footer */
+footer{
+    position: relative;
+    bottom: 0;
+    height: fit-content;
+    width: var(--desktop-width);
+}
