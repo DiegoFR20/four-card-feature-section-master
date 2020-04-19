@@ -19,6 +19,7 @@ html{
     margin: 0;
     height: 0;
     width: 0;
+    display: flex;
 
     /*Colors*/
     --red: hsl(0, 78%, 62%);
@@ -73,13 +74,16 @@ h1{
 /*Cards*/
 img{
     float: right;
-    margin-top: 20px;
+    margin-top: 35px;
     margin-right: 38px;
 }
 
 .content{
     width: var(--desktop-width);
-    height: 766px;
+    height: 766px; 
+    display: grid;
+    grid-template-columns: 480px 480px 480px;
+    grid-template-rows: 383px 383px;
 }
 
 .content div{
@@ -98,30 +102,35 @@ img{
     font-family: "poppins200";
 }
 
-.teamBuilder{
-    margin-top: 50px;
-    margin-bottom: 25px;
-    margin-left: 525px;
-    border-top: 5px solid var(--red);
+.supervisor{
+    margin-left: 90px;
+    grid-column: 1;
+    grid-row: 1;
+    border-top: 5px solid var(--cyan);
+    transform: translate(20px ,132.5px);
 }
 
-.supervisor{
-    float: left;
-    margin-bottom: 575px;
-    margin-left: 110px;
-    border-top: 5px solid var(--cyan);
+.teamBuilder{
+    margin-left: 45px;
+    grid-column: 2;
+    grid-row: 1;
+    border-top: 5px solid var(--red);
+    margin-top: -10px;
 }
 
 .karma{
-    margin-left: 525px;
-    margin-right: 25px;
+    margin-left: 45px;
+    grid-column: 2;
+    grid-row: 2;
     border-top: 5px solid var(--orange);
+    transform: translateY(-40%);
 }
 
 .calculator{
-    float: right;
-    margin-right: 110px;
+    grid-column: 3;
+    grid-row: 1;
     border-top: 5px solid var(--blue);
+    transform: translate(-20px, 132.5px);
 }
 
 h2{
@@ -133,8 +142,6 @@ h2{
 
 /* Footer */
 footer{
-    position: relative;
-    bottom: 0;
     height: fit-content;
     width: var(--desktop-width);
 }
