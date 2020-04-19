@@ -39,19 +39,19 @@ html{
 body{
     background-color: var(--verylight-Gray);
     width: var(--mobile-width);
-    margin: 0;
-    height: 1300px;
 }
 
 h1{
     color: var(--very-Dark-Blue);
     line-height: 17px;
-    width: fit-content;
+    width: 365px;
     font-family: "poppins200";
+    margin-left: 5px;
 }
 
 img{
     float: right;
+    margin: 10px 20px 0 0;
 }
 
 h2{
@@ -63,11 +63,15 @@ h2{
 
 /*Title*/
 .header{
+    margin: 25px 0;
     width: var(--mobile-width);
 }
 
-.header p{
+h4{  
+    width: 300px;
     font-family: "poppins200";
+    text-align: center;
+    margin-left: 37.5px;
 }
 
 .dark{
@@ -76,19 +80,26 @@ h2{
 }
 
 .content{
+    margin: 25px 0;
     width: var(--mobile-width);
-    height: 1300px; 
+    height: auto; 
 }
 
 .content div{
     background-color: white;
+    width: 270px;
+    margin: 25px 40px;
+    padding-left: 25px;
+    height: 200px;
     border-radius: 5px;
     box-shadow: 0 2px 5px 1px var(--grayish-Blue);
 }
 
 .content div p {
-    font-size: 15px;
+    width: 250px;
+    font-size: 12px;
     font-family: "poppins200";
+    text-align: left;
 }
 
 .supervisor{
@@ -111,8 +122,6 @@ h2{
     body{
         background-color: var(--verylight-Gray);
         width: var(--desktop-width);
-        margin: 0;
-        height: 922px;
     }
     
     h1{
@@ -121,7 +130,6 @@ h2{
         text-align: center;
         line-height: 17px;
         width: fit-content;
-        font-family: "poppins200";
     }
 
     img{
@@ -135,67 +143,51 @@ h2{
         width: var(--desktop-width);
     }
     
-    .header p{
-        font-family: "poppins200";
+    h4{
         width: 500px;
         margin-top: 34px;
         margin-bottom: 20px;
         margin-left: 470px;
-        text-align: center;
     }
 
     .content{
         width: var(--desktop-width);
-        height: 766px; 
+        height: 600px;
         display: grid;
         grid-template-columns: 480px 480px 480px;
-        grid-template-rows: 383px 383px;
+        grid-template-rows: 350px 350px;
     }
-
     .content div{
-        background-color: white;
         height: 250px;
         padding-left: 40px;
         padding-top: 10px;
         width: 350px;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px 1px var(--grayish-Blue);
     }
 
     .content div p {
         width: 300px;
-        font-size: 15px;
-        font-family: "poppins200";
     }
 
     .supervisor{
-        margin-left: 90px;
         grid-column: 1;
         grid-row: 1;
-        border-top: 5px solid var(--cyan);
-        transform: translate(20px ,132.5px);
+        transform: translate(50px, 132.5px);
     }
 
     .teamBuilder{
-        margin-left: 45px;
         grid-column: 2;
         grid-row: 1;
-        border-top: 5px solid var(--red);
-        margin-top: -10px;
     }
 
     .karma{
-        margin-left: 45px;
         grid-column: 2;
         grid-row: 2;
-        border-top: 5px solid var(--orange);
-        transform: translateY(-40%);
+        transform: translateY(-50px);
     }
 
     .calculator{
         grid-column: 3;
         grid-row: 1;
-        border-top: 5px solid var(--blue);
-        transform: translate(-20px, 132.5px);
-    }
+        transform: translate(-50px, 132.5px);
+    }    
 }
